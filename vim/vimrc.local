@@ -1,0 +1,20 @@
+" indentation settings
+set tabstop=4 shiftwidth=4 smarttab expandtab
+
+" turn syntax highlighting on
+syntax on
+
+" activate modeline
+set modeline
+
+" set nginx filetype
+au BufRead,BufNewFile /usr/local/nginx/conf/*,/etc/nginx/sites-enabled/*,/etc/nginx/sites-available/* set ft=nginx
+
+" show paragraphs and extra whitespace with <F2>
+map <silent><F2> :set nolist! listchars=tab:>-,eol:¶,trail:.<CR>
+
+augroup HiglightTODO
+    autocmd!
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', '\(TODO\)\|\(@todo\)\|\(FIXME\)\|\(@fixme\)', -1)
+augroup END
+

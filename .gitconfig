@@ -1,0 +1,9 @@
+[user]
+    email = nocive@gmail.com
+    name = Jose' Pedro Saraiva
+
+[color]
+    ui = true
+
+[push]
+    default = simple
