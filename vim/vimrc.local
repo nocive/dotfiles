@@ -18,3 +18,6 @@ augroup HiglightTODO
     autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', '\(TODO\)\|\(@todo\)\|\(FIXME\)\|\(@fixme\)', -1)
 augroup END
 
+" increase vim clipboard size
+set viminfo='20,<1000,s10,h
+
