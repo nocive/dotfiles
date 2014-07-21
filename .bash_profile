@@ -62,3 +62,16 @@ __prompt_cmd() {
 
 GIT_PS1_SHOWCOLORHINTS=1
 __prompt_cmd
+
+eval `dircolors -b`
+
+# aws env vars
+export EC2_ACCESS_KEY="XXXXXX"
+export EC2_SECRET_KEY="XXXXXX"
+export EC2_URL=https://ec2.amazonaws.com
+export S3_URL=https://s3.amazonaws.com:443
+export AWS_ACCESS_KEY_ID=${EC2_ACCESS_KEY}
+export AWS_ACCESS_KEY=${EC2_ACCESS_KEY}
+export AWS_SECRET_ACCESS_KEY=${EC2_SECRET_KEY}
+export AWS_SECRET_KEY=${EC2_SECRET_KEY}
+
